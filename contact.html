@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General body and page layout */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .navbar {
+            background-color: #333;
+            padding: 10px 20px;
+        }
+
+        .navbar h1 {
+            color: white;
+            margin: 0;
+            display: inline;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar ul li {
+            margin-left: 15px;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 5px 10px;
+            transition: background-color 0.3s;
+        }
+
+        .navbar ul li a:hover {
+            background-color: #ea5455;
+            border-radius: 5px;
+        }
+
+        /* Section styling */
+        .section {
+            padding: 40px 20px;
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #ea5455;
+        }
+
+        p {
+            color: #555;
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        input, textarea, button {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        input, textarea {
+            width: 100%;
+        }
+
+        button {
+            background-color: #ea5455;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #d44c4c;
+        }
+
+        .contact-info {
+            margin-top: 30px;
+            background-color: #faf9f9;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .contact-info h3 {
+            color: #ea5455;
+        }
+
+        .contact-info p {
+            margin: 10px 0;
+        }
+
+        .contact-info a {
+            color: #ea5455;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <h1>Protect Wildlife</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li>
+                    <a href="#">Explore</a>
+                    <div class="dropdown-menu">
+                        <a href="wildlife.html">Wildlife</a>
+                        <a href="habitats.html">Habitats</a>
+                    </div>
+                </li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="section">
+        <h2>Contact Us</h2>
+        <p>We’d love to hear from you! Whether you have questions, suggestions, or want to get involved, reach out to us.</p>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="6" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <div class="contact-info">
+            <h3>Other Ways to Reach Us</h3>
+            <p>Email: <a href="mailto:contact@protectwildlife.org">contact@protectwildlife.org</a></p>
+            <p>Phone: +1 234 567 890</p>
+            <p>Address: 123 Conservation Lane, Green City, Planet Earth</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Protect Wildlife. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
